@@ -1,0 +1,114 @@
+/* About Page Container */
+
+.about-container {
+  padding: 40px;
+  font-family: "Roboto", sans-serif; /* Modern, clean font */
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(15, 15, 15, 0.8),
+      rgba(30, 30, 30, 0.3)
+  ), url('home-back.gif');
+  color: rgb(245, 245, 245); /* Light text for contrast */
+}
+
+/* About Header */
+.about-header {
+  margin: 40px 0;
+  text-align: center;
+  color: rgb(240, 94, 94); /* Accent color */
+}
+
+.about-header p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* About Content */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-description, .about-features, .about-team {
+  width: 70%;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent white */
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.about-description:hover, .about-features:hover, .about-team:hover {
+  transform: scale(1.02); /* Subtle zoom on hover */
+}
+
+/* Section Titles */
+.about-description h2, .about-features h2, .about-team h2 {
+  font-size: 1.8rem;
+  color: rgb(66, 133, 244); /* Soft blue */
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgb(240, 94, 94); /* Accent color */
+  padding-bottom: 5px;
+}
+
+/* Paragraphs and Lists */
+.about-description p, .about-features ul, .about-team p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgb(220, 220, 220);
+}
+
+.about-features ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.about-features li {
+  margin-bottom: 10px;
+  color: rgb(245, 245, 245);
+}
+
+/* Footer */
+.about-footer {
+  text-align: center;
+  margin-top: 40px;
+  color: rgb(150, 150, 150); /* Muted color */
+}
+
+.about-footer p {
+  font-size: 1rem;
+  color: rgb(66, 133, 244); /* Soft blue */
+}
+
+.about-footer a {
+  color: rgb(245, 66, 66); /* Red accent */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.about-footer a:hover {
+  font-weight: 700;
+  color: rgb(255, 99, 72); /* Brighter red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-description, .about-features, .about-team {
+      width: 90%;
+      margin-left: 0;
+  }
+
+  .about-header p {
+      font-size: 1rem;
+  }
+
+  .about-description h2, .about-features h2, .about-team h2 {
+      font-size: 1.6rem;
+  }
+}

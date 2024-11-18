@@ -1,0 +1,161 @@
+/* Global Styling */
+* {
+    font-family: "Poppins", sans-serif; /* Clean, modern font */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Navigation Links */
+.nav-link {
+    color: "#c5c6c7"; /* Darker gray for contrast */
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: rgb(110, 177, 249); /* Accent red for hover */
+}
+
+/* Logo */
+.LOGO {
+    width: 60px;
+    height: 60px;
+}
+
+/* Button Styles */
+.login-btn, .reg-btn {
+    padding: 12px 40px;
+    border: 2px solid transparent;
+    color: white;
+    background-color: rgb(66, 133, 245); /* Soft blue */
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: white;
+    color: rgb(66, 133, 245);
+    border: 2px solid rgb(66, 133, 245);
+}
+
+.reg-btn {
+    background-color: rgb(106, 171, 188); /* Coral */
+}
+
+.reg-btn:hover {
+    background-color: white;
+    color: rgb(72, 191, 255);
+    border: 2px solid rgb(72, 191, 255);
+}
+
+/* Dropdown */
+.dropdwn {
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid rgb(255, 99, 72); /* Coral */
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.dropdwn:hover {
+    background-color: rgb(240, 240, 240); /* Light grey */
+    color: rgb(45, 45, 45);
+    border-color: rgb(66, 133, 245);
+}
+
+/* Backgrounds */
+.login-back, .home-back {
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.3)
+    );
+}
+
+.login-back {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.3)
+    ), url('home-back.gif');
+}
+
+.home-back {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.3)
+    ), url('home-back.gif');
+}
+
+/* Headings */
+.agent-h1, .user-h1 {
+    font-size: 2rem;
+    color: rgb(66, 133, 245); /* Blue accent */
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.agent-h2 p, .user-h2 p {
+    font-size: 2.5rem;
+    color: "lightblue"; /* Coral */
+    text-align: center;
+    -webkit-text-stroke: 0.5px rgb(255, 99, 72);
+}
+
+/* Agent Button */
+.agent-btn {
+    border: 1px solid rgb(66, 133, 245); /* Matching border color */
+    background-color: rgb(45, 45, 45); /* Darker background */
+    color: white;
+    padding: 10px 15px;
+    font-size: 0.875rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.agent-btn:hover {
+    background-color: rgb(66, 133, 245);
+    color: white;
+}
+
+/* Accordion */
+.acc-btn:hover {
+    background-color: rgb(255, 99, 72); /* Coral hover */
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Footer Links */
+.about-footer a {
+    color: rgb(66, 133, 245); /* Accent blue */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.about-footer a:hover {
+    font-weight: 700;
+    color: rgb(255, 99, 72); /* Brighter coral */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .login-btn, .reg-btn {
+        font-size: 18px;
+        padding: 10px 30px;
+    }
+
+    .agent-h1, .user-h1, .agent-h2 p, .user-h2 p {
+        font-size: 1.5rem;
+    }
+}
